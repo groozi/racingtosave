@@ -46,7 +46,7 @@ export default function Home() {
       
       <input type="text" id="userInput" placeholder="type your first name here..."></input>
       <input type="text" placeholder="type your last name here.."></input>
-      <button onclick="showInput()">Show what you entered</button>
+      
       
     </main>
   );
