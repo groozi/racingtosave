@@ -5,8 +5,6 @@ request.get('http://api.reimaginebanking.com/atms?key=bd9126609a861aad34434bd43a
     bar(res.body); //do something
 });
 
-
-
 //create a customer
 export function createCustomer(first, last, streetNum, streetName, city, state, zip) {
     return new Promise((resolve, reject) => {
