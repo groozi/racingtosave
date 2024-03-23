@@ -23,8 +23,8 @@ export function CardWithForm() {
   return (
     <Card className="w-[350px]">
       <CardHeader>
-        <CardTitle>Find Group</CardTitle>
-        <CardDescription>Name of group you would like to join</CardDescription>
+        <CardTitle>Create Group</CardTitle>
+        <CardDescription>Make the group you want to race with</CardDescription>
       </CardHeader>
       <CardContent>
         <form>
@@ -33,13 +33,26 @@ export function CardWithForm() {
               <Label htmlFor="name">Group Name</Label>
               <Input id="name" placeholder="Name for your racing group" />
             </div>
-
+            <div className="flex flex-col space-y-1.5">
+              <Label htmlFor="members">Number of members in group</Label>
+              <Select>
+                <SelectTrigger id="Number of group members">
+                  <SelectValue placeholder="Select" />
+                </SelectTrigger>
+                <SelectContent position="popper">
+                  <SelectItem value="two">2</SelectItem>
+                  <SelectItem value="three">3</SelectItem>
+                  <SelectItem value="four">4</SelectItem>
+                  <SelectItem value="five">5</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
           </div>
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
         <Button variant="outline">Cancel</Button>
-        <Button>Search for Group</Button>
+        <Button>Create Group</Button>
       </CardFooter>
     </Card>
   )
