@@ -3,9 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import { Tabs } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
-import { CreateGroupForm } from "@/components/findgroup";
+import { CardWithForm } from "@/components/findgroup";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CreateGroup } from "@/components/creategroup";
 
 export default function Home() {
     return (
@@ -35,7 +36,7 @@ export default function Home() {
                 </div>
             </div>
 
-        <CardWithFormForm/>
+            <CreateGroup />
 
 
 
